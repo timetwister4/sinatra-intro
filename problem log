@@ -1,0 +1,13 @@
+problem log
+
+Problem: rake db:migrate failed because no password supplied
+Solution: provided a password in the string
+
+Problem: rake db: migrate failed because password authentication failed
+Solution: reset user anne's password to 'password', and entered that as password in environments
+
+Problem: rake db:migrate failed because "NameError: uninitialized constant ActiveRecord::Migrator::Zlib"
+Solution: add line "require 'zlib'" to file environments.rb
+
+Problem: Syntax error in create_model, unexpected end of input
+Solution add keyword end after line 4
